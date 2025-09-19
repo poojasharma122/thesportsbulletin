@@ -86,7 +86,7 @@ header {
     left: 0;
     width: 100%;
     z-index: 1000;
-    background-color: #141719;
+    background-color: #0B132B;
     transition: all 0.3s ease;
 }
 
@@ -142,7 +142,7 @@ header.is-sticky {
 
 .menu-list ul li a.active,
 .menu-list ul li a:hover {
-    background: radial-gradient(circle at center, #5C8D63 0%, #0B6623 100%);
+    background: linear-gradient(135deg, #1C77C3, #0B132B);
     color: #fff;
 }
 
@@ -186,11 +186,26 @@ span.menu-close {
 /* header end here   */
 
 .hero-bnr {
-    background: radial-gradient(circle at center, #5C8D63 0%, #0B6623 100%);
-    padding: 100px 0 0;
+    background: linear-gradient(135deg, #1C77C3, #0B132B);
+    padding: 120px 0;
     display: flex;
     align-items: center;
     justify-content: center;
+    background: url(../images/hero-bnr.jpg) no-repeat center center;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+
+.hero-bnr::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
 }
 
 .hero-bnr .row {
@@ -207,14 +222,14 @@ span.menu-close {
     padding: 5px 10px;
     margin-bottom: 10px;
     border-radius: 30px;
-    background: radial-gradient(circle at center, #5C8D63 0%, #0B6623 100%);
+    background: linear-gradient(135deg, #1C77C3, #0B132B);
 
 }
 
 /*  */
 .trending-now {
     padding: 40px 0;
-    background-color: #141719;
+    background-color: #0B132B;
 }
 
 .trending-now-content h2 {
@@ -312,7 +327,7 @@ span.menu-close {
 }
 
 .slider-badge {
-    background: radial-gradient(circle at center, #5C8D63 0%, #0B6623 100%);
+    background: linear-gradient(135deg, #1C77C3, #0B132B);
     color: white;
     padding: 12px 24px;
     border-radius: 25px;
@@ -333,7 +348,7 @@ span.menu-close {
     z-index: 10;
     width: 60px;
     height: 60px;
-    background: radial-gradient(circle at center, #5C8D63 0%, #0B6623 100%);
+    background: linear-gradient(135deg, #1C77C3, #0B132B);
     border: none;
     border-radius: 50%;
     color: #fff;
@@ -382,7 +397,7 @@ span.menu-close {
 }
 
 .latest-slider .slick-dots li.slick-active {
-    background: #5C8D63;
+    background: linear-gradient(135deg, #1C77C3, #0B132B);
     transform: scale(1.2);
 }
 
@@ -391,7 +406,7 @@ span.menu-close {
 }
 
 .built-for-nfl-fans {
-    background: radial-gradient(circle at center, #5C8D63 0%, #0B6623 100%);
+    background: linear-gradient(135deg, #1C77C3, #0B132B);
     padding: 60px 0;
 }
 
@@ -423,7 +438,7 @@ span.menu-close {
 /* footer start here */
 /* Footer css */
 footer {
-    background-color: #000;
+    background-color: #0B132B;
     padding: 40px 0 0;
 }
 
@@ -449,7 +464,7 @@ footer {
 }
 
 .footer-menu ul li a:hover {
-    color: #0B6623;
+    color: #1C77C3;
 }
 
 .social-links ul {
@@ -464,14 +479,16 @@ footer {
     height: 40px;
     line-height: 40px;
     text-align: center;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    background: #1c1d20;
+    background: linear-gradient(135deg, #1C77C3, #0B132B);
     color: #fff;
+    border-radius: 50%;
     transition: all 0.4s ease-in-out;
 }
 
 .social-links ul li a:hover {
-    border: 1px solid #0B6623;
+    transform: scale(1.1);
+    background: linear-gradient(135deg, #0B132B, #1C77C3);
+
 }
 
 .bottom-line {
@@ -518,7 +535,7 @@ footer {
 }
 
 .bottom-ft p a {
-    color: #0B6623;
+    color: #1C77C3;
 }
 
 .bottom-ft p a:hover {
@@ -526,8 +543,8 @@ footer {
 }
 
 .inner-bnr {
-    height: 450px;
-    background-position: 101% 31% !important;
+    height: 500px;
+    background-position: center center !important;
     background-repeat: no-repeat !important;
     background-size: cover !important;
     display: flex;
@@ -536,6 +553,17 @@ footer {
     position: relative;
     z-index: 1;
     background-color: #000 !important;
+}
+
+.inner-bnr::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
 }
 
 .inner-content h2 {
@@ -550,7 +578,7 @@ footer {
 .last-update-content {
     background: #000;
     padding: 30px;
-    border: 1px solid #45f882;
+    border: 1px solid #1C77C3;
 }
 
 .last-update-content:not(:last-child) {
@@ -602,7 +630,6 @@ footer {
 .section-title {
     font-weight: 800;
     font-size: 2rem;
-    text-transform: uppercase;
 }
 
 .section-subtitle {
@@ -611,7 +638,7 @@ footer {
 }
 
 .number-card {
-    background: radial-gradient(circle at center, #5C8D63 0%, #0B6623 100%);
+    background: linear-gradient(135deg, #1C77C3, #0B132B);
     border-radius: 16px;
     padding: 2rem 1rem;
     position: relative;
@@ -653,7 +680,7 @@ footer {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     border-radius: 12px;
     overflow: hidden;
-    background: radial-gradient(circle at center, #5C8D63 0%, #0B6623 100%);
+    background: linear-gradient(135deg, #1C77C3, #0B132B);
     height: 100%;
 }
 
@@ -687,3 +714,82 @@ footer {
     height: 234px;
     object-fit: cover;
 }
+
+.gt-contact-us {
+    padding: 40px 0;
+    background: linear-gradient(135deg, #1C77C3, #0B132B);
+}
+
+.gt-contact-bg {
+    padding: 23px;
+    background: #fff;
+    height: 100%;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.gt-comment-form-wrap {
+    padding: 23px;
+    background-color: #fff;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    height: 100%;
+}
+
+.gt-comment-form-wrap h4,
+.gt-contact-content h3 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 150%;
+    color: #000;
+}
+
+.gt-comment-form-wrap p,
+.gt-contact-content p {
+    font-size: 16px;
+    font-weight: 00;
+    line-height: 28px;
+    color: #000;
+}
+
+.gt-contact-us-wrapper .gt-comment-form-wrap .form-clt input,
+.gt-contact-us-wrapper .gt-comment-form-wrap .form-clt textarea {
+    width: 100%;
+    outline: none;
+    border: none;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    background: transparent;
+    padding: 12px 20px;
+    font-weight: 400;
+    color: #000;
+    border: 1px solid #000;
+}
+
+.button-cst {
+    background: linear-gradient(135deg, #1C77C3, #0B132B);
+    color: #fff;
+    border-radius: 30px;
+    padding: 6px 14px;
+    font-size: 16px;
+    font-weight: 700;
+    outline: none;
+    box-shadow: none;
+    border: 1px solid #1C77C3;
+}
+
+.newsletter {
+    padding: 40px 0;
+}
+
+.newsletter-inner {
+    text-align: center;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+form.newsletter-form input {
+    border-radius: 30px;
+    padding: 6px 14px;
+    font-size: 16px;
+    font-weight: 700;
+    border: 1px solid;
+}   
