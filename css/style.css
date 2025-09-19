@@ -674,7 +674,7 @@ footer {
 }
 
 .blog_desc_img img {
-    height: 450px;
+    height: 600px;
     object-fit: cover;
     object-position: top;
 }
