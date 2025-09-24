@@ -1,0 +1,1168 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* reset css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+.container{
+    max-width: 1440px;
+    width: 100%;
+    padding: 0 30px;
+}
+img {
+    width: 100%;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #fff;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: clamp(16px, 2vw, 24px);
+    font-weight: 600;
+}
+
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: clamp(1.5rem, 2.5vw, 1.75rem);
+    font-weight: 600;
+}
+
+h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: clamp(1.25rem, 2vw, 1.375rem);
+    font-weight: 600;
+}
+
+h5 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: clamp(1.125rem, 1.8vw, 24px);
+    font-weight: 600;
+}
+
+h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: clamp(1rem, 1.5vw, 1rem);
+
+    font-weight: 600;
+}
+
+p {
+    font-size: clamp(1rem, 1.2vw, 16px);
+    line-height: 1.6;
+    color: #333;
+}
+
+
+p,
+a,
+span,
+li {
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* reset css */
+
+/* header start here */
+.logo {
+    width: 120px;
+}
+header {
+    padding: 20px 0;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #0B132B;
+    transition: all 0.3s ease;
+}
+
+header.is-sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    animation: slideDown 0.35s ease-out;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-100%);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-list ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    align-items: center;
+}
+
+.menu-list ul li {
+    position: relative;
+}
+
+.menu-list ul li a {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: -0.34px;
+    color: #fff;
+    text-align: left;
+    position: relative;
+    padding: 6px 14px;
+    background: transparent;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+}
+
+.menu-list ul li a.active,
+.menu-list ul li a:hover {
+    background: linear-gradient(135deg, #1C77C3, #0B132B);
+    color: #fff;
+}
+
+.main-content {
+    overflow: hidden;
+}
+
+
+
+span.menu-close {
+    display: none;
+}
+
+.menu-icon {
+    display: none;
+}
+
+.menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 999;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+
+.menu-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+
+/* header end here   */
+
+.hero-bnr {
+    background: linear-gradient(135deg, #1C77C3, #0B132B);
+    padding: 120px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(../images/hero-bnr.jpg) no-repeat center center;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+
+.hero-bnr::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+
+.hero-bnr .row {
+    align-items: center;
+}
+
+.hero-bnr-content p {
+    color: #fff;
+}
+
+.hero-bnr-content span {
+    color: #fff;
+    display: inline-block;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+    border-radius: 30px;
+    background: linear-gradient(135deg, #1C77C3, #0B132B);
+
+}
+
+/*  */
+.trending-now {
+    padding: 40px 0;
+    background-color: #0B132B;
+}
+
+.trending-now-content h2 {
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.trending-now-content p {
+    color: #fff;
+}
+
+.trending-now-image {
+    margin-bottom: 20px;
+}
+
+.the-latest-item {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.the-latest-item-content {
+    padding-left: 2em;
+}
+
+.the-latest-item-content p {
+    margin: 0;
+}
+
+.the-latest-item-image img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.the-latest-items-wrap .the-latest-item:not(:first-child) {
+    margin-top: 30px;
+}
+
+/* The Latest Slider Styles */
+.the-latest {
+    padding: 40px 0;
+}
+
+.the-latest-content h2 {
+    text-align: left;
+    margin-bottom: 10px;
+    color: #141719;
+}
+
+.the-latest-content .subtitle {
+    text-align: left;
+    font-size: 1.125rem;
+    color: #666;
+    margin-bottom: 40px;
+    font-weight: 500;
+}
+
+.latest-slider {
+    position: relative;
+}
+
+.slider-item {
+    position: relative;
+    margin: 0;
+}
+
+.slider-image {
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+}
+
+
+
+.slider-image img {
+    width: 100%;
+    height: 700px;
+    object-fit: cover;
+    display: block;
+}
+
+.slider-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.7));
+    padding: 40px 20px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.slider-badge {
+    background: linear-gradient(135deg, #1C77C3, #0B132B);
+    color: white;
+    padding: 12px 24px;
+    border-radius: 25px;
+    font-size: 1rem;
+    font-weight: 600;
+    display: inline-block;
+    backdrop-filter: blur(10px);
+    text-align: center;
+    min-width: 200px;
+}
+
+/* Slick Slider Custom Styles */
+.latest-slider .slick-prev,
+.latest-slider .slick-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, #1C77C3, #0B132B);
+    border: none;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+.latest-slider .slick-prev {
+    left: 20px;
+}
+
+.latest-slider .slick-next {
+    right: 20px;
+}
+
+.latest-slider .slick-prev:before,
+.latest-slider .slick-next:before {
+    content: '';
+    display: none;
+}
+
+
+.latest-slider .slick-dots {
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex !important;
+    justify-content: center;
+    gap: 10px;
+}
+
+.latest-slider .slick-dots li {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #ddd;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.latest-slider .slick-dots li.slick-active {
+    background: linear-gradient(135deg, #1C77C3, #0B132B);
+    transform: scale(1.2);
+}
+
+.latest-slider .slick-dots li button {
+    display: none;
+}
+
+.built-for-nfl-fans {
+    background: linear-gradient(135deg, #1C77C3, #0B132B);
+    padding: 60px 0;
+}
+
+.built-for-nfl-fans-wrap {
+    background-color: #ffff;
+    height: 100%;
+    transition: 0.2s all ease-in-out;
+}
+
+.built-for-nfl-fans-content {
+    padding: 30px;
+}
+
+.built-for-nfl-fans-image {
+    height: 23.75rem;
+    width: 100%;
+}
+
+.built-for-nfl-fans-image img {
+    height: 100%;
+    object-fit: cover;
+}
+
+.built-for-nfl-fans-inner {
+    max-width: 68.75rem;
+    margin: 0 auto;
+}
+
+/* footer start here */
+/* Footer css */
+footer {
+    background-color: #0B132B;
+    padding: 40px 0 0;
+}
+
+.footer-logo {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.footer-menu ul {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.footer-menu ul li a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.3s;
+    font-size: 14px;
+}
+
+.footer-menu ul li a:hover {
+    color: #1C77C3;
+}
+
+.social-links ul {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+}
+
+.social-links ul li a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background: linear-gradient(135deg, #1C77C3, #0B132B);
+    color: #fff;
+    border-radius: 50%;
+    transition: all 0.4s ease-in-out;
+}
+
+.social-links ul li a:hover {
+    transform: scale(1.1);
+    background: linear-gradient(135deg, #0B132B, #1C77C3);
+
+}
+
+.bottom-line {
+    border-top: 1px solid #cccccc47;
+    padding: 16px 0;
+    margin-top: 40px;
+}
+
+.bottom-ft {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer_SSlLink {
+    background-image: url("../images/ssl.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 120px;
+    height: 32px;
+    display: block;
+}
+
+.footer-content h2 {
+    color: #fff;
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 14px;
+}
+
+.footer-content p {
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 30px;
+
+}
+
+.bottom-ft p {
+    margin: 0;
+    color: #fff;
+    font-size: 14px;
+}
+
+.bottom-ft p a {
+    color: #1C77C3;
+}
+
+.bottom-ft p a:hover {
+    color: #fff;
+}
+
+.inner-bnr {
+    height: 500px;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+    background-color: #000 !important;
+}
+
+.inner-bnr::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+
+.inner-content h2 {
+    color: #fff;
+    text-align: center;
+}
+
+.last-update {
+    padding: 40px 0;
+    background: linear-gradient(135deg, #1C77C3, #0B132B);
+}
+
+
+
+.last-update-content:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+.last-update-inner {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    margin-top: -130px;
+    z-index: 1;
+    position: relative;
+}
+
+.last-update-content p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #000;
+    margin-bottom: 0;
+}
+
+.last-update-content p a {
+    color: #1C77C3;
+}
+
+.last-update-content h4 {
+    color: #000;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: .5rem;
+}
+
+.last-update-content ul li {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #000;
+    position: relative;
+    padding-bottom: 10px;
+    padding-left: 20px;
+}
+
+.last-update-content ul li::before {
+    content: '';
+    width: 8px;
+    height: 8px;
+    background: linear-gradient(135deg, #1C77C3, #0B132B);
+    position: absolute;
+    left: 0;
+    top: 10px;
+    border-radius: 50%;
+}
+
+
+
+.section-title{
+    font-weight: 600;
+    font-size: 34px;
+    color: #1C77C3;
+}
+
+.section-subtitle {
+    font-size: 1rem;
+    color: #000;
+}
+
+.number-card {
+    background: linear-gradient(135deg, #1C77C3, #0B132B);
+    border-radius: 16px;
+    padding: 2rem 1rem;
+    position: relative;
+    color: #fff;
+    overflow: hidden;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.number-card p {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    margin-bottom: 0;
+}
+
+
+.card-number {
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: #FFD700;
+    /* Gold Highlight */
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* */
+.blog-sec {
+    padding: 40px 0;
+}
+
+.blog-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 12px;
+    overflow: hidden;
+    background: linear-gradient(135deg, #1C77C3, #0B132B);
+    height: 100%;
+}
+
+.blog-card-content {
+    padding: 20px;
+}
+
+
+
+.blog-sec .row .col-lg-4.col-md-6 {
+    margin-bottom: 30px;
+}
+
+.blog-card-content h3 {
+    font-size: 20px;
+    color: #fff;
+    line-height: 30px;
+}
+
+.blog_desc_img img {
+    height: 550px;
+    object-fit: cover;
+    object-position: top;
+}
+
+.blog-detail-sec {
+    padding: 40px 0;
+}
+
+.blog-card-image img {
+    height: 234px;
+    object-fit: cover;
+}
+
+.gt-contact-us {
+    padding: 40px 0;
+    background: linear-gradient(135deg, #1C77C3, #0B132B);
+}
+
+.gt-contact-bg {
+    padding: 23px;
+    background: #fff;
+    height: 100%;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.gt-comment-form-wrap {
+    padding: 23px;
+    background-color: #fff;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    height: 100%;
+}
+
+.gt-comment-form-wrap h4,
+.gt-contact-content h3 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 150%;
+    color: #000;
+}
+
+.gt-comment-form-wrap p,
+.gt-contact-content p {
+    font-size: 16px;
+    font-weight: 00;
+    line-height: 28px;
+    color: #000;
+}
+
+.gt-contact-us-wrapper .gt-comment-form-wrap .form-clt input,
+.gt-contact-us-wrapper .gt-comment-form-wrap .form-clt textarea {
+    width: 100%;
+    outline: none;
+    border: none;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    background: transparent;
+    padding: 12px 20px;
+    font-weight: 400;
+    color: #000;
+    border: 1px solid #1C77C3;
+    border-radius: 12px;
+}
+
+.button-cst {
+    background: linear-gradient(135deg, #1C77C3, #0B132B);
+    color: #fff;
+    border-radius: 30px;
+    padding: 6px 14px;
+    font-size: 16px;
+    font-weight: 700;
+    outline: none;
+    box-shadow: none;
+    border: 1px solid #1C77C3;
+}
+
+.newsletter {
+    padding: 40px 0;
+}
+
+.newsletter-inner {
+    text-align: center;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+form.newsletter-form input {
+    border-radius: 30px;
+    padding: 6px 14px;
+    font-size: 16px;
+    font-weight: 700;
+    border: 1px solid;
+    outline: none;
+}
+
+.be-part-of-the-conversation {
+    padding: 120px 0;
+    background: url(../images/part.jpg) no-repeat;
+    background-size: cover;
+    height: 500px;
+    position: relative;
+    background-position: center;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    background-attachment: fixed;
+    justify-content: center;
+}
+
+.be-part-of-the-conversation::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0 0 0 / 60%);
+    z-index: -1;
+}
+
+.be-part-of-the-conversation-content {
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.be-part-of-the-conversation-content h2 {
+    color: #fff;
+}
+
+.be-part-of-the-conversation-content p {
+    color: #fff;
+}
+
+.start-reading-now {
+    padding: 40px 0;
+    background: linear-gradient(135deg, #1C77C3, #0B132B);
+}
+
+.start-reading-now-content {
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.start-reading-now-content h2 {
+    color: #fff;
+}
+
+.start-reading-now-content p {
+    color: #fff;
+    margin: 0;
+}
+
+/*  */
+.what-we-deliver {
+    padding: 40px 0;
+}
+
+.what-we-deliver-content ul li {
+
+    font-size: 16px;
+    line-height: 1.6;
+    position: relative;
+    padding-left: 28px;
+}
+
+.what-we-deliver-content ul li:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+.heading-what-we-deliver {
+    margin-bottom: 40px;
+}
+
+.events {
+    padding: 40px 0;
+}
+
+.events_inner_content h3,
+strong {
+    color: #175996;
+}
+
+.events_inner_content {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+.events_outer_image img {
+    height: 350px;
+    object-fit: cover;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 100%;
+}
+
+/* NFL Teams Section Styles */
+.nfl-teams-section {
+    padding: 80px 0;
+    background: linear-gradient(135deg, #0B132B, #1a1a2e);
+    position: relative;
+    overflow: hidden;
+}
+
+
+
+.nfl-teams-section .section-title {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 60px;
+    font-size: 3rem;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    position: relative;
+    z-index: 2;
+}
+
+
+
+.nfl-teams-section .conference-section {
+    margin-bottom: 80px;
+    position: relative;
+    z-index: 2;
+}
+
+.nfl-teams-section .conference-section:nth-child(even) {
+    background: rgba(28, 119, 195, 0.05);
+    padding: 40px 0;
+    border-radius: 20px;
+    margin: 40px 0;
+}
+
+.nfl-teams-section .conference-title {
+    color: #fff;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 40px;
+    text-align: center;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+
+.nfl-teams-section .conference-title::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #1C77C3, transparent);
+    transform: translateY(-50%);
+    z-index: -1;
+}
+
+.nfl-teams-section .conference-title span {
+    background: linear-gradient(135deg, #0B132B, #1a1a2e);
+    padding: 0 30px;
+}
+
+.nfl-teams-section .division-section {
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.nfl-teams-section  .division-title {
+    color: #1C77C3;
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    position: relative;
+}
+
+.nfl-teams-section .teams-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    margin-bottom: 40px;
+}
+
+.nfl-teams-section .team-card {
+    background: linear-gradient(145deg, #ffffff, #f8f9fa);
+    border-radius: 20px;
+    padding: 25px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    border: 2px solid rgba(28, 119, 195, 0.1);
+    position: relative;
+    overflow: hidden;
+    backdrop-filter: blur(10px);
+}
+
+
+
+
+
+.nfl-teams-section .team-logo {
+    text-align: center;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.nfl-teams-section .team-logo::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width:60px;
+    height:60px;
+    background: linear-gradient(135deg, #1C77C3, #0B132B);
+    border-radius: 50%;
+    opacity: 0.1;
+    z-index: -1;
+}
+
+.nfl-teams-section .team-logo i {
+font-size: 34px;
+    color: #1C77C3;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+
+
+.nfl-teams-section .team-name {
+    font-size: 1.4rem;
+    font-weight: 800;
+    margin-bottom: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    position: relative;
+}
+
+
+.nfl-teams-section .team-info {
+    color: #555;
+}
+
+.nfl-teams-section .team-info p {
+    margin-bottom: 12px;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    display: flex;
+    align-items: center;
+    padding: 8px 0;
+    border-bottom: 1px solid rgba(28, 119, 195, 0.1);
+    transition: all 0.3s ease;
+}
+
+.nfl-teams-section .team-info p:last-child {
+    border-bottom: none;
+}
+
+.nfl-teams-section .team-info p:hover {
+    background: rgba(28, 119, 195, 0.05);
+    padding-left: 10px;
+    border-radius: 8px;
+}
+
+.nfl-teams-section .team-info i {
+    color: #1C77C3;
+    margin-right: 12px;
+    width: 20px;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+}
+
+.nfl-teams-section .team-info p:hover i {
+    color: #FFD700;
+    transform: scale(1.1);
+}
+
+/* Enhanced Responsive Design */
+@media (max-width: 1400px) {
+    .teams-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .teams-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .nfl-teams-section {
+        padding: 60px 0;
+    }
+    
+    .section-title {
+        font-size: 2.5rem;
+        margin-bottom: 40px;
+    }
+    
+    .conference-title {
+        font-size: 2rem;
+        margin-bottom: 30px;
+    }
+    
+    .division-title {
+        font-size: 1.5rem;
+        margin-bottom: 25px;
+    }
+    
+    .teams-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .team-card {
+        padding: 20px;
+    }
+    
+    .team-logo i {
+        font-size: 2.5rem;
+    }
+    
+    .team-name {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .section-title {
+        font-size: 2rem;
+    }
+    
+    .conference-title {
+        font-size: 1.5rem;
+    }
+    
+    .division-title {
+        font-size: 1.25rem;
+    }
+    
+    .team-card {
+        padding: 15px;
+    }
+}

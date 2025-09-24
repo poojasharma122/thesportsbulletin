@@ -1,0 +1,126 @@
+@media (max-width: 991px) {
+    header .container {
+        max-width: 100%;
+    }
+    .events_inner_content {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+    .events_inner_content {
+        padding-top: 20px;
+    }
+    .events-cards {
+        margin-bottom: 0 !important;
+    }
+}
+
+
+
+@media (max-width: 767px) {
+    .menu-list {
+        width: 0;
+        position: fixed;
+        top: 0;
+        left: 0;
+        overscroll-behavior-y: contain;
+        scrollbar-width: none;
+        background: #141719 none repeat scroll 0 0;
+        transition: transform 0.45s ease-in-out, opacity 0.45s ease-in-out;
+        height: 100vh;
+        overflow-x: hidden;
+        transition: width 0.3s ease;
+        z-index: 9999;
+        padding-top: 60px;
+        max-width: 300px;
+    }
+
+    .menu-list.open {
+        width: 100%;
+        transition: width 0.3s ease;
+    }
+
+
+    .menu-list ul {
+        flex-direction: column;
+        padding-left: 20px;
+        gap: 20px;
+        align-items: flex-start;
+    }
+
+    .menu-icon span {
+        font-size: 26px;
+        font-weight: 400;
+        color: #fff;
+    }
+
+    .right-col {
+        max-width: 100%;
+    }
+
+
+    span.menu-close {
+        padding: 6px 6px;
+        display: block;
+        border-radius: 6px;
+        width: 45px;
+        height: 45px;
+        text-align: center;
+        box-shadow: 0 0 25px rgb(0 0 0 / .1);
+        line-height: 32px;
+        background: #1862A1;
+        color: #fff;
+        position: absolute;
+        right: 7px;
+        top: 5px;
+        font-size: 18px;
+    }
+
+
+    .menu-icon {
+        display: block;
+    }
+
+    .the-latest {
+        padding: 40px 0;
+    }
+
+    .slider-image img {
+        height: 300px;
+    }
+
+    .latest-slider .slick-prev,
+    .latest-slider .slick-next {
+        width: 50px;
+        height: 50px;
+        font-size: 16px;
+    }
+
+    .latest-slider .slick-prev {
+        left: 10px;
+    }
+
+    .latest-slider .slick-next {
+        right: 10px;
+    }
+
+    .slider-overlay {
+        padding: 30px 15px 15px;
+    }
+
+    .slider-badge {
+        font-size: 0.9rem;
+        padding: 10px 20px;
+        min-width: 150px;
+    }
+    .inner-bnr {
+        height: 400px;
+    }
+    .container {
+        padding: 0 15px;
+    }
+}
+@media (max-width: 575px) {
+    .section-title{
+        font-size: 24px;
+    }
+}
