@@ -41,6 +41,50 @@ $(document).ready(function(){
     });
 });
 
+// Custom Scroll Animations
+document.addEventListener('DOMContentLoaded', function() {
+    // Function to check if element is in viewport
+    function isInViewport(element) {
+        const rect = element.getBoundingClientRect();
+        return (
+            rect.top >= 0 &&
+            rect.left >= 0 &&
+            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+            rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+        );
+    }
+
+    // Function to check if element is partially in viewport
+    function isPartiallyInViewport(element) {
+        const rect = element.getBoundingClientRect();
+        const windowHeight = window.innerHeight || document.documentElement.clientHeight;
+        return (
+            rect.top < windowHeight &&
+            rect.bottom > 0
+        );
+    }
+
+    // Function to add animation class
+    function animateOnScroll() {
+        const animatedElements = document.querySelectorAll('[class*="scroll-"]');
+        
+        animatedElements.forEach(element => {
+            if (isPartiallyInViewport(element)) {
+                element.classList.add('animate');
+            }
+        });
+    }
+
+    // Initial check
+    animateOnScroll();
+
+    // Listen for scroll events
+    window.addEventListener('scroll', animateOnScroll);
+    
+    // Listen for resize events to recalculate on window resize
+    window.addEventListener('resize', animateOnScroll);
+});
+
 
 
 
