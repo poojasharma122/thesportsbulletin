@@ -10,6 +10,11 @@
         max-width: 100%;
     }
 
+    .menu-list ul {
+        gap: 10px !important;
+
+    }
+
     .events_inner_content {
         max-width: 100%;
         margin: 0 auto;
