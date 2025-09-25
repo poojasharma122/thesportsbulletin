@@ -41,36 +41,33 @@ $(document).ready(function(){
     });
 });
 
-// Custom Scroll Animations
+// Custom Scroll Animations - Triggers on every scroll
 document.addEventListener('DOMContentLoaded', function() {
-    // Function to check if element is in viewport
-    function isInViewport(element) {
-        const rect = element.getBoundingClientRect();
-        return (
-            rect.top >= 0 &&
-            rect.left >= 0 &&
-            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-            rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-        );
-    }
-
     // Function to check if element is partially in viewport
     function isPartiallyInViewport(element) {
         const rect = element.getBoundingClientRect();
         const windowHeight = window.innerHeight || document.documentElement.clientHeight;
         return (
-            rect.top < windowHeight &&
-            rect.bottom > 0
+            rect.top < windowHeight * 0.8 &&
+            rect.bottom > windowHeight * 0.2
         );
     }
 
-    // Function to add animation class
+    // Function to add animation class (removes and adds for continuous animation)
     function animateOnScroll() {
         const animatedElements = document.querySelectorAll('[class*="scroll-"]');
         
         animatedElements.forEach(element => {
             if (isPartiallyInViewport(element)) {
-                element.classList.add('animate');
+                // Remove animate class first, then add it back for continuous animation
+                element.classList.remove('animate');
+                // Small delay to ensure the animation resets
+                setTimeout(() => {
+                    element.classList.add('animate');
+                }, 10);
+            } else {
+                // Remove animate class when element is out of view
+                element.classList.remove('animate');
             }
         });
     }
@@ -78,8 +75,19 @@ document.addEventListener('DOMContentLoaded', function() {
     // Initial check
     animateOnScroll();
 
-    // Listen for scroll events
-    window.addEventListener('scroll', animateOnScroll);
+    // Listen for scroll events with throttling for performance
+    let ticking = false;
+    function handleScroll() {
+        if (!ticking) {
+            requestAnimationFrame(function() {
+                animateOnScroll();
+                ticking = false;
+            });
+            ticking = true;
+        }
+    }
+
+    window.addEventListener('scroll', handleScroll, { passive: true });
     
     // Listen for resize events to recalculate on window resize
     window.addEventListener('resize', animateOnScroll);
