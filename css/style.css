@@ -8,11 +8,13 @@
     box-sizing: border-box;
 
 }
-.container{
+
+.container {
     max-width: 1440px;
     width: 100%;
     padding: 0 30px;
 }
+
 img {
     width: 100%;
 }
@@ -25,7 +27,7 @@ ul {
 
 h1 {
     font-family: 'Montserrat', sans-serif;
-    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-size: clamp(2.5rem, 4vw, 4rem);
     font-weight: bold;
     letter-spacing: 1px;
     color: #fff;
@@ -86,6 +88,7 @@ a {
 .logo {
     width: 120px;
 }
+
 header {
     padding: 20px 0;
     position: relative;
@@ -638,7 +641,7 @@ footer {
 
 
 
-.section-title{
+.section-title {
     font-weight: 600;
     font-size: 34px;
     color: #1C77C3;
@@ -801,9 +804,9 @@ footer {
 
 form.newsletter-form input {
     border-radius: 30px;
-    padding: 6px 14px;
-    font-size: 16px;
-    font-weight: 700;
+    padding: 10px 14px;
+    font-size: 18px;
+    width: 100%;
     border: 1px solid;
     outline: none;
 }
@@ -919,7 +922,7 @@ strong {
 
 /* NFL Teams Section Styles */
 .nfl-teams-section {
-padding: 50px 0;
+    padding: 50px 0;
     overflow: hidden;
 }
 
@@ -966,7 +969,7 @@ padding: 50px 0;
     position: relative;
 }
 
-.nfl-teams-section  .division-title {
+.nfl-teams-section .division-title {
     color: #1C77C3;
     font-size: 1.75rem;
     font-weight: 700;
@@ -1012,8 +1015,8 @@ padding: 50px 0;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width:60px;
-    height:60px;
+    width: 60px;
+    height: 60px;
     background: linear-gradient(135deg, #1C77C3, #0B132B);
     border-radius: 50%;
     opacity: 0.1;
@@ -1021,7 +1024,7 @@ padding: 50px 0;
 }
 
 .nfl-teams-section .team-logo i {
-font-size: 34px;
+    font-size: 34px;
     color: #1C77C3;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
@@ -1074,5 +1077,12 @@ font-size: 34px;
 }
 
 
+form.newsletter-form {
+    max-width: 500px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    gap: 10px;
+}
 
 /* Enhanced Responsive Design */
