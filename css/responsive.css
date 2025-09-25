@@ -3,6 +3,10 @@
         grid-template-columns: repeat(2, 1fr);
         gap: 15px;
     }
+
+    .hero-bnr {
+        height: 500px;
+    }
 }
 
 @media (max-width: 991px) {
@@ -42,6 +46,15 @@
 
     .blog_desc_img img {
         height: auto;
+    }
+
+    .hero-bnr {
+        height: auto;
+    }
+
+    .hero-bnr-content span {
+
+        font-size: 13px;
     }
 }
 

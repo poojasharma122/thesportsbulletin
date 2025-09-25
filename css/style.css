@@ -1106,3 +1106,6 @@ form.newsletter-form {
 .what-we-deliver-image {
     height: 100%;
 }
+.last-update-content strong {
+    color: #000;
+}
