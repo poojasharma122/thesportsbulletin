@@ -1462,5 +1462,8 @@ form.newsletter-form {
 }
 
 .disclaimer {
-    padding: 40px 0;
+    padding: 0  0 40px 0;
+}
+.mt-b-custom{
+    margin-bottom: 40px;
 }
