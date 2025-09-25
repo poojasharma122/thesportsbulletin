@@ -14,6 +14,10 @@
         max-width: 100%;
     }
 
+    .what-we-deliver-content {
+        margin-top: 20px;
+    }
+
     .menu-list ul {
         gap: 10px !important;
 
