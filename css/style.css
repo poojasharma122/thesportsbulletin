@@ -933,11 +933,10 @@ form.newsletter-form input {
 strong {
     color: #175996;
 }
-.events_outer_image {
+.events_outer_image{
     transition: 0.2s all ease-in-out;
     overflow: hidden;
     border-radius: 12px;
-    filter: grayscale(1);
 }
 .events_inner_content {
     padding: 0;
