@@ -424,21 +424,31 @@ span.menu-close {
 .built-for-nfl-fans-wrap {
     background-color: #ffff;
     height: 100%;
+    border-radius: 10px;
     transition: 0.2s all ease-in-out;
 }
-
+.built-for-nfl-fans-wrap:hover img{
+    transform: scale(1.05);
+}
 .built-for-nfl-fans-content {
     padding: 30px;
 }
 
 .built-for-nfl-fans-image {
     height: 23.75rem;
+    transition: 0.2s all ease-in-out;
+    overflow: hidden;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
     width: 100%;
 }
 
 .built-for-nfl-fans-image img {
     height: 100%;
+    transition: 0.2s all ease-in-out;
     object-fit: cover;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
 }
 
 .built-for-nfl-fans-inner {
@@ -665,7 +675,9 @@ footer {
     overflow: hidden;
     transition: transform 0.3s ease, background 0.3s ease;
 }
-
+.number-card:hover {
+    transform: translateY(-10px);
+}
 .number-card p {
     color: #fff;
     font-size: 16px;
@@ -703,6 +715,17 @@ footer {
     height: 100%;
 }
 
+.blog-card:hover {
+    transform: translateY(-10px);
+}
+.blog-card:hover img {
+    transform: scale(1.05);
+}
+.blog-card-image img {
+    transition: 0.2s all ease-in-out;
+}   
+
+
 .blog-card-content {
     padding: 20px;
 }
@@ -723,6 +746,7 @@ footer {
     height: 550px;
     object-fit: cover;
     object-position: top;
+    
 }
 
 .blog-detail-sec {
