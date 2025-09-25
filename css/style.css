@@ -818,7 +818,11 @@ footer {
     box-shadow: none;
     border: 1px solid #1C77C3;
 }
-
+.button-cst:hover {
+    background: linear-gradient(135deg, #0B132B, #1C77C3); /* reverse colors */
+    border-color: #0B132B;
+    border: 1px solid #1C77C3;
+}
 .newsletter {
     padding: 40px 0;
 }
