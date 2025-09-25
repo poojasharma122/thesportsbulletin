@@ -19,6 +19,14 @@
 
     }
 
+    .built-for-nfl-fans-image {
+        height: 16.75rem;
+    }
+
+    .built-for-nfl-fans-inner .row .col-lg-6:not(:last-child) {
+        margin-bottom: 30px;
+    }
+
     .events_inner_content {
         max-width: 100%;
         margin: 0 auto;
