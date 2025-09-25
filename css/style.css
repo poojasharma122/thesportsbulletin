@@ -933,10 +933,11 @@ form.newsletter-form input {
 strong {
     color: #175996;
 }
-.events_outer_image{
+.events_outer_image {
     transition: 0.2s all ease-in-out;
     overflow: hidden;
     border-radius: 12px;
+    filter: grayscale(1);
 }
 .events_inner_content {
     padding: 0;
@@ -957,7 +958,10 @@ strong {
     border-radius: 12px;
     width: 100%;
     max-width: 100%;
+    border: 2px solid #1862a4;
+    padding: 10px;
 }
+
 
 /* NFL Teams Section Styles */
 .nfl-teams-section {
@@ -1091,7 +1095,7 @@ strong {
 
 .nfl-teams-section .team-info p:hover {
     background: rgba(28, 119, 195, 0.05);
-    padding-left: 10px;
+    padding-left: 3px;
     border-radius: 8px;
 }
 
