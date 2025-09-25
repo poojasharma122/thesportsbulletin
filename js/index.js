@@ -40,3 +40,7 @@ $(document).ready(function(){
         nextArrow: '<button type="button" class="slick-next"><i class="fa fa-chevron-right"></i></button>'
     });
 });
+
+
+
+

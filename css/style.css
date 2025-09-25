@@ -193,7 +193,6 @@ span.menu-close {
 /* header end here   */
 
 .hero-bnr {
-    background: linear-gradient(135deg, #1C77C3, #0B132B);
     padding: 120px 0;
     display: flex;
     align-items: center;
@@ -201,8 +200,9 @@ span.menu-close {
     background: url(../images/hero-bnr.jpg) no-repeat center center;
     background-size: cover;
     position: relative;
+    background-position: center;
     z-index: 1;
-    height: 700 px;
+    height: 700px;
     display: flex;
     align-items: center;
     justify-content: center;

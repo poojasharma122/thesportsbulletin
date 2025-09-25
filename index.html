@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
     <link rel="stylesheet" type="text/css" href="css/slick.css" />
     <link rel="stylesheet" type="text/css" href="css/slick-theme.css" />
+    <link href="css/aos.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link href="css/responsive.css" rel="stylesheet">
 </head>
@@ -61,9 +62,10 @@
             <div class="row">
                 <div class="col-lg-6">
                     <div class="hero-bnr-content">
-                        <h1>The Sports Bulletin </h1>
-                        <span>Your Global Source for NFL News and Analysis</span>
-                        <p>From kickoff to the final whistle, The Sports Bulletin delivers the pulse of the National
+                        <h1 data-aos="fade-up">The Sports Bulletin </h1>
+                        <span data-aos="fade-up">Your Global Source for NFL News and Analysis</span>
+                        <p data-aos="fade-up">From kickoff to the final whistle, The Sports Bulletin delivers the pulse
+                            of the National
                             Football
                             League. Covering every team, every game, and every headline — we bring you breaking news,
                             game
@@ -109,7 +111,7 @@
                         <div class="latest-slider">
                             <div class="slider-item">
                                 <div class="slider-image">
-                                    <img src="images/lastest1.jpg" alt="Fantasy Tips & Injury Reports">
+                                    <img src="images/last1.jpg" alt="Fantasy Tips & Injury Reports">
                                     <div class="slider-overlay">
                                         <div class="slider-badge">Instant reaction from every game on the schedule.
                                         </div>
@@ -118,7 +120,7 @@
                             </div>
                             <div class="slider-item">
                                 <div class="slider-image">
-                                    <img src="images/2.webp" alt="Game Reactions">
+                                    <img src="images/last2.jpg" alt="Game Reactions">
                                     <div class="slider-overlay">
                                         <div class="slider-badge">Team-specific news, from depth chart moves to
                                             front-office decisions.
@@ -128,7 +130,7 @@
                             </div>
                             <div class="slider-item">
                                 <div class="slider-image">
-                                    <img src="images/3.jpg" alt="Team News">
+                                    <img src="images/last3.jpg" alt="Team News">
                                     <div class="slider-overlay">
                                         <div class="slider-badge">Draft buzz, combine results, and scouting reports as
                                             prospects rise and fall.</div>
@@ -150,10 +152,10 @@
         <div class="container">
             <div class="built-for-nfl-fans-inner">
                 <div class="row">
-                    <div class="col-lg-6">
+                    <div class="col-lg-6" >
                         <div class="built-for-nfl-fans-wrap">
                             <div class="built-for-nfl-fans-image">
-                                <img src="images/Fans.jpg" alt="Built for NFL Fans">
+                                <img src="images/Packers-Fans.jpg" alt="Built for NFL Fans">
                             </div>
                             <div class="built-for-nfl-fans-content">
                                 <h2>Built for NFL Fans Everywhere</h2>
@@ -163,10 +165,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6">
+                    <div class="col-lg-6" >
                         <div class="built-for-nfl-fans-wrap">
                             <div class="built-for-nfl-fans-image">
-                                <img src="images/playing-football.jpg" alt="Built for NFL Fans">
+                                <img src="images/football1.jpg" alt="Built for NFL Fans">
                             </div>
                             <div class="built-for-nfl-fans-content">
                                 <h2>Always On. Always Football.
@@ -357,12 +359,22 @@
 
 
 
-
     <script src=" js/bootstrap.bundle.min.js">
     </script>
+
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/slick.js"></script>
+  
     <script src=" js/index.js"></script>
+
+    
+    <script src="js/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,  // animation speed
+            once: true       // ek baar chalne ke liye
+        });
+    </script>
 </body>
 
 </html>
