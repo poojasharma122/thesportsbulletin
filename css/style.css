@@ -1092,3 +1092,12 @@ form.newsletter-form {
     height: 350px;
     object-fit: cover;
 }
+
+.what-we-deliver-image img {
+    height: 100%;
+    object-fit: cover;
+}
+
+.what-we-deliver-image {
+    height: 100%;
+}

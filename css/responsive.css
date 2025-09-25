@@ -4,19 +4,39 @@
         gap: 15px;
     }
 }
+
 @media (max-width: 991px) {
     header .container {
         max-width: 100%;
     }
+
     .events_inner_content {
         max-width: 100%;
         margin: 0 auto;
     }
+
     .events_inner_content {
         padding-top: 20px;
     }
+
     .events-cards {
         margin-bottom: 0 !important;
+    }
+
+    .events_outer_image img {
+        height: auto;
+    }
+
+    .what-we-deliver-content ul li {
+        padding: 0;
+    }
+
+    .what-we-deliver-content ul li {
+        padding: 0;
+    }
+
+    .blog_desc_img img {
+        height: auto;
     }
 }
 
@@ -24,8 +44,9 @@
 
 @media (max-width: 767px) {
     .inner-content h2 {
-    font-size: 40px;
-}
+        font-size: 40px;
+    }
+
     .menu-list {
         width: 0;
         position: fixed;
@@ -121,21 +142,52 @@
         padding: 10px 20px;
         min-width: 150px;
     }
+
     .inner-bnr {
         height: 400px;
     }
+
     .container {
         padding: 0 15px;
     }
 }
+
 @media (max-width: 575px) {
     .nfl-teams-section .teams-grid {
-    grid-template-columns: 1fr;
-}
-        .inner-content h2 {
+        grid-template-columns: 1fr;
+    }
+
+    .inner-content h2 {
         font-size: 35px;
     }
-    .section-title{
+
+    .section-title {
         font-size: 24px;
+    }
+
+    .blog-card-content h3 {
+        font-size: 18px;
+        line-height: 25px;
+    }
+
+    .logo {
+        width: 120px;
+    }
+
+    .nfl-teams-section .section-title {
+        font-size: 30px;
+    }
+
+    .nfl-teams-section .conference-title span {
+        font-size: 24px;
+    }
+
+    .gt-comment-form-wrap h4,
+    .gt-contact-content h3 {
+        font-size: 19px;
+    }
+
+    .logo {
+        width: 120px;
     }
 }
