@@ -1086,3 +1086,22 @@ form.newsletter-form {
 }
 
 /* Enhanced Responsive Design */
+
+.our-approach {
+    padding: 40px 0;
+    background: linear-gradient(135deg, #1C77C3, #0B132B);
+}
+
+.our-approach-wrap {
+    background: #fff;
+    height: 100%;
+}
+
+.our-approach-content {
+    padding: 30px;
+}
+
+.our-approach-image img {
+    height: 350px;
+    object-fit: cover;
+}
