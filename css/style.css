@@ -1101,8 +1101,8 @@ form.newsletter-form {
 .what-we-deliver-image img {
     height: 100%;
     object-fit: cover;
+    border-radius: 10px;
 }
-
 .what-we-deliver-image {
     height: 100%;
 }
