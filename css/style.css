@@ -929,7 +929,11 @@ form.newsletter-form input {
 strong {
     color: #175996;
 }
-
+.events_outer_image{
+    transition: 0.2s all ease-in-out;
+    overflow: hidden;
+    border-radius: 12px;
+}
 .events_inner_content {
     padding: 0;
     display: flex;
@@ -939,10 +943,13 @@ strong {
     max-width: 650px;
     margin: 0 auto;
 }
-
+.events_outer_image:hover img {
+    transform: scale(1.05);
+}
 .events_outer_image img {
     height: 350px;
     object-fit: cover;
+    transition: 0.2s all ease-in-out;
     border-radius: 12px;
     width: 100%;
     max-width: 100%;
