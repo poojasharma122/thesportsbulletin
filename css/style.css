@@ -1087,15 +1087,30 @@ form.newsletter-form {
 .our-approach-wrap {
     background: #fff;
     height: 100%;
+    border-radius: 10px;
+    transition: all 0.3s ease;
 }
+
+
 
 .our-approach-content {
     padding: 30px;
 }
 
+.our-approach-image {
+    overflow: hidden;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
 .our-approach-image img {
     height: 350px;
     object-fit: cover;
+    transition: all 0.3s ease;
+}
+
+.our-approach-image img:hover {
+    transform: scale(1.05);
 }
 
 .what-we-deliver-image img {
@@ -1103,9 +1118,16 @@ form.newsletter-form {
     object-fit: cover;
     border-radius: 10px;
 }
+
 .what-we-deliver-image {
     height: 100%;
 }
+
 .last-update-content strong {
     color: #000;
+}
+
+.our-approach-image img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
