@@ -123,6 +123,10 @@
         margin-bottom: 0 !important;
     }
 
+    .footer-main .row .col-lg-3.col-md-6 {
+        margin-bottom: 1rem !important;
+    }
+
     .right-col {
         max-width: 100%;
     }
