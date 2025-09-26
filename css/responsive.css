@@ -85,7 +85,7 @@
         width: 0;
         position: fixed;
         top: 0;
-        left: 0;
+        right: -100%;
         overscroll-behavior-y: contain;
         scrollbar-width: none;
         background: #141719 none repeat scroll 0 0;
@@ -101,6 +101,7 @@
     .menu-list.open {
         width: 100%;
         transition: width 0.3s ease;
+        right: 0;
     }
 
 
@@ -115,6 +116,11 @@
         font-size: 26px;
         font-weight: 400;
         color: #fff;
+    }
+
+    .footer-main .row .col-lg-3.col-md-6:last-child .footer-section,
+    .footer-main .row .col-lg-3.col-md-6:last-child {
+        margin-bottom: 0 !important;
     }
 
     .right-col {
