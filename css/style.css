@@ -1137,19 +1137,24 @@ strong {
     margin: 0 auto;
 }
 
-.events_outer_image:hover img {
-    transform: scale(1.05);
+.events_outer_image {
+    border: 2px solid #1C77C3;
+    /* initial border transparent */
+    padding: 10px;
 }
 
 .events_outer_image img {
     height: 350px;
     object-fit: cover;
-    transition: 0.2s all ease-in-out;
+    transition: 0.3s all ease-in-out;
     border-radius: 12px;
     width: 100%;
     max-width: 100%;
-    border: 2px solid #1862a4;
-    padding: 10px;
+
+}
+
+.events_outer_image:hover img {
+    transform: scale(1.02);
 }
 
 
@@ -1362,8 +1367,9 @@ form.newsletter-form {
 }
 
 .disclaimer {
-    padding: 0  0 40px 0;
+    padding: 0 0 40px 0;
 }
-.mt-b-custom{
+
+.mt-b-custom {
     margin-bottom: 40px;
 }
