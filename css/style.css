@@ -97,7 +97,7 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 1000;
+    z-index: 999999999999 !important;
     background-color: #0B132B;
     transition: all 0.3s ease;
 }
@@ -109,6 +109,7 @@ header.is-sticky {
     width: 100%;
     animation: slideDown 0.35s ease-out;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 999999999999 !important;
 }
 
 @keyframes slideDown {
@@ -252,6 +253,7 @@ span.menu-close {
 
 .trending-now-content p {
     color: #fff;
+    margin-bottom: 0;
 }
 
 .trending-now-image {
@@ -1372,4 +1374,7 @@ form.newsletter-form {
 
 .mt-b-custom {
     margin-bottom: 40px;
+}
+.what-we-deliver .row {
+    align-items: center;
 }
