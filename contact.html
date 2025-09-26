@@ -8,6 +8,7 @@
     <link rel="icon" href="images/favicon.png">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="css/aos.css">
     <link rel="stylesheet" type="text/css" href="css/slick.css" />
     <link rel="stylesheet" type="text/css" href="css/slick-theme.css" />
     <link href="css/style.css" rel="stylesheet">
@@ -59,7 +60,7 @@
         <section class="inner-bnr" style="background: url(images/contact-bnr.jpg);">
             <div class="container">
                 <div class="inner-content">
-                    <h2 class="scroll-animate">Contact </h2>
+                    <h2 class="scroll-animate" data-aos="fade-up">Contact </h2>
                 </div>
             </div>
         </section>
@@ -72,7 +73,7 @@
                 <div class="gt-contact-us-wrapper">
                     <div class="row g-4">
                         <div class="col-lg-12">
-                            <div class="gt-contact-bg scroll-fade-left">
+                            <div class="gt-contact-bg scroll-fade-left" data-aos="fade-up">
                                 <div class="gt-contact-content scroll-animate">
                                     <h3>General Inquiries
                                     </h3>
@@ -81,13 +82,13 @@
                                     <p>Email: <a href="mailto:info@thesportsbulletin.net">info@thesportsbulletin.net</a>
                                     </p>
                                 </div>
-                                <div class="gt-contact-content scroll-fade-right">
+                                <div class="gt-contact-content scroll-fade-right" data-aos="fade-up">
                                     <h3>Editorial Tips & Story Ideas </h3>
                                     <P>If you have a news tip, feature suggestion, or interview request, send us the
                                         details. We review every submission and follow up when appropriate.
                                     </P>
                                 </div>
-                                <div class="gt-contact-content scroll-scale">
+                                <div class="gt-contact-content scroll-scale" data-aos="fade-up">
                                     <h3>Advertising & Partnerships </h3>
                                     <P>Interested in sponsorship opportunities or collaborations? Reach out with your
                                         proposal or media kit and we'll respond promptly.
@@ -106,7 +107,7 @@
 
         <section class="newsletter">
             <div class="container">
-                <div class="newsletter-inner">
+                <div class="newsletter-inner" data-aos="fade-up">
                     <h2 class="section-title scroll-animate">Newsletter Signup
                     </h2>
                     <p class="scroll-fade-left">
@@ -127,7 +128,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-                        <div class="start-reading-now-content">
+                        <div class="start-reading-now-content" data-aos="fade-up">
 
                             <p class="scroll-animate">
                                 We aim to reply to all messages within 24–48 hours during the regular season and
@@ -247,9 +248,13 @@
 
     <script src=" js/bootstrap.bundle.min.js">
     </script>
+    <script src="js/aos.js"></script>
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/slick.js"></script>
     <script src=" js/index.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
